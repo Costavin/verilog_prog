@@ -1,7 +1,7 @@
 # verilog_prog
 Repo where it is exercised some verilog programming
 
-##Steps for compilation:
+## Steps for compilation:
 
 `iverilog -o output_exe multiplexer.v multiplexer_tb.v`
 
