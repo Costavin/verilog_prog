@@ -1,0 +1,131 @@
+$date
+	Fri Feb  6 18:01:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_mux1 $end
+$var wire 1 ! out_neg $end
+$var wire 1 " out $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % clk $end
+$var reg 1 & sel $end
+$scope module dut $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 " out $end
+$var wire 1 ' out1 $end
+$var wire 1 ( out2 $end
+$var wire 1 ! out_neg $end
+$var wire 1 & sel $end
+$var wire 1 ) selb $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+1!
+$end
+#5
+1%
+1#
+#10
+0%
+#12
+0!
+1"
+1'
+0)
+1&
+#15
+1%
+#20
+0%
+#22
+1(
+0'
+1)
+0&
+1$
+#25
+1%
+#30
+0%
+#35
+1%
+#37
+1'
+0)
+0(
+1&
+0$
+#40
+0%
+#45
+1%
+#50
+0%
+#55
+1%
+#57
+1!
+0"
+0'
+1)
+0&
+#60
+0%
+#62
+0!
+1"
+1'
+0)
+1&
+#65
+1%
+#67
+x!
+x"
+x'
+x#
+#70
+0%
+#72
+1!
+0"
+0'
+1)
+0&
+#75
+1%
+#77
+x!
+x"
+x)
+x'
+x&
+1#
+#80
+0%
+#85
+1%
+#90
+0%
+#95
+1%
+#97
