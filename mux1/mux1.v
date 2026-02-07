@@ -1,3 +1,9 @@
+	/*	File:		mux1.v
+	*	Author:		Vincifori Costantino, costantinovinc@gmail.com
+	*	Date:		07/02/2026
+	*	Description:	Set of a 1 bit selector multiplexer
+	*/
+
 `timescale 1ns / 1ns
 
 module mux1(a, b, sel, out, out_neg);

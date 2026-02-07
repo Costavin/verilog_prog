@@ -1,3 +1,11 @@
+        /*      File:           mux1.v
+        *       Author:         Vincifori Costantino, costantinovinc@gmail.com
+        *       Date:           07/02/2026
+        *       Description:    testbench for the parametric mux2.v module
+        */
+
+
+
 `timescale 1ns / 1ps
 
 `define	PARAMLOG 3
