@@ -1,8 +1,0 @@
-# running in script_bmc/src/
-read -formal mealy.v
-prep -top mealy
-
-hierarchy -smtcheck
-rename -witness
-write_jny -no-connections ../model/design.json
-write_rtlil ../model/design.il
