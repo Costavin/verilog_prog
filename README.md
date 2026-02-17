@@ -1,17 +1,24 @@
 # verilog_prog
-Repo where it is exercised some verilog programming
+Repository mainly used to exercise some verilog programming
 
 ## Steps for compilation:
+
+For very simple designs, it can be used *iverilog*, for e.g.:
 
 `iverilog -o output_exe multiplexer.v multiplexer_tb.v`
 
 This will produce the file executable *output_exe*.
-So as to get the waveform dump, we procceed with the following:
+For projects a little bit more complex, it was added a Makefile.
+
+A waveform dump is obtained as soon as it is run a simulation binary. However, for simpler designs, it can be used the *vvp*, for e.g.:
 
 `vvp dsn`
 
-It will produce a file as it was denominated in the testbench *multiplexer_tb.v*, for e.g. *wave.vcd*.
-Finally the waveform dump can be analyzed with:
+Finally, waveform dumps can be inspected with *gtkwave*:
 
 `gtkwave wave.vcd`
+
+To test the design with formal verification methods, first it must be built the \*.sby script, and then call the *sby* program on it:
+
+`sby -f script.sby`
 

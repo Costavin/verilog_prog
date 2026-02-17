@@ -1,0 +1,21 @@
+[tasks]
+cvr
+bmc
+prv
+
+[options]
+cvr: mode cover
+bmc: mode bmc
+prv: mode prove
+depth 20
+
+[engines]
+smtbmc
+
+[script]
+read -formal mealy.v
+prep -top mealy
+
+[files]
+mealy.v
+

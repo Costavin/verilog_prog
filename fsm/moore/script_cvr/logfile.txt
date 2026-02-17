@@ -1,0 +1,27 @@
+SBY 13:07:45 [script_cvr] Removing directory '/home/costantino/Sources/verilog_prog/fsm/moore/script_cvr'.
+SBY 13:07:45 [script_cvr] Copy '/home/costantino/Sources/verilog_prog/fsm/moore/moore.v' to '/home/costantino/Sources/verilog_prog/fsm/moore/script_cvr/src/moore.v'.
+SBY 13:07:45 [script_cvr] engine_0: smtbmc
+SBY 13:07:45 [script_cvr] base: starting process "cd script_cvr/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 13:07:45 [script_cvr] base: finished (returncode=0)
+SBY 13:07:45 [script_cvr] prep: starting process "cd script_cvr/model; yosys -ql design_prep.log design_prep.ys"
+SBY 13:07:45 [script_cvr] prep: finished (returncode=0)
+SBY 13:07:45 [script_cvr] smt2: starting process "cd script_cvr/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 13:07:45 [script_cvr] smt2: finished (returncode=0)
+SBY 13:07:45 [script_cvr] engine_0: starting process "cd script_cvr; yosys-smtbmc --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Solver: yices
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Reached cover statement in step 1 at moore: moore.v:14.2-14.45 (_witness_.check_cover_moore_v_14_2)
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 13:07:45 [script_cvr] engine_0: ##   0:00:00  Status: passed
+SBY 13:07:45 [script_cvr] engine_0: finished (returncode=0)
+SBY 13:07:45 [script_cvr] engine_0: Status returned by engine: pass
+SBY 13:07:45 [script_cvr] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:07:45 [script_cvr] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:07:45 [script_cvr] summary: engine_0 (smtbmc) returned pass
+SBY 13:07:45 [script_cvr] summary: cover trace: script_cvr/engine_0/trace0.vcd
+SBY 13:07:45 [script_cvr] summary:   reached cover statement moore._witness_.check_cover_moore_v_14_2 at moore.v:14.2-14.45 step 1
+SBY 13:07:45 [script_cvr] DONE (PASS, rc=0)

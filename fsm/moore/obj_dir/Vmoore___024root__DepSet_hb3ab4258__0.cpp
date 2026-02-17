@@ -36,7 +36,7 @@ VL_INLINE_OPT void Vmoore___024root___nba_sequent__TOP__0(Vmoore___024root* vlSe
     __Vtableidx1 = 0;
     // Body
     if (vlSymsp->_vm_contextp__->assertOnGet(2, 1)) {
-        if (VL_UNLIKELY(((4U < (IData)(vlSelfRef.moore__DOT__led_index))))) {
+        if (VL_UNLIKELY(((0xeU < (IData)(vlSelfRef.moore__DOT__led_index))))) {
             VL_WRITEF_NX("[%0t] %%Error: moore.v:15: Assertion failed in %Nmoore: 'assert' failed.\n",0,
                          64,VL_TIME_UNITED_Q(1),-12,
                          vlSymsp->name());
