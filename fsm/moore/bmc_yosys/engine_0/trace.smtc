@@ -1,0 +1,32 @@
+initial
+assume (= [$auto$async2sync.cc:101:execute$25] false)
+assume (= [$auto$async2sync.cc:110:execute$29] true)
+assume (= [led_index] #b0000)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$11] #b0000) #b00000000)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$11] #b0001) #b00000001)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$11] #b0010) #b00000010)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$11] #b0011) #b00000100)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$11] #b0100) #b00001000)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$11] #b0101) #b00010000)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$11] #b0110) #b00100000)
+
+state 0
+assume (= [i_clk] false)
+
+state 1
+assume (= [i_clk] false)
+
+state 2
+assume (= [i_clk] false)
+
+state 3
+assume (= [i_clk] false)
+
+state 4
+assume (= [i_clk] false)
+
+state 5
+assume (= [i_clk] false)
+
+state 6
+assume (= [i_clk] false)
