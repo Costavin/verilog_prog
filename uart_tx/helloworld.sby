@@ -1,0 +1,20 @@
+[tasks]
+prv
+
+[options]
+prv: mode prove
+depth 20
+expect pass
+
+[engines]
+smtbmc yices
+
+[script]
+read_verilog -formal helloworld.v
+read_verilog -formal uart_tx.v
+prep -top helloworld
+
+[files]
+uart_tx.v
+helloworld.v
+

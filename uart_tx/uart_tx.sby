@@ -1,0 +1,17 @@
+[tasks]
+prv
+
+[options]
+prv: mode prove
+depth 20
+
+[engines]
+smtbmc yices
+
+[script]
+read_verilog -DUART_TX -formal uart_tx.v
+prep -top uart_tx
+
+[files]
+uart_tx.v
+
