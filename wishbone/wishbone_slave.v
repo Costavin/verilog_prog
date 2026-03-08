@@ -1,3 +1,18 @@
+/*
+ * This file is part of verilog_programming
+ *
+ * Copyright (C) 2026 Costantino
+ *
+ * This file is a modified version from: Verilog, Formal Verification and Verilator Beginner's Tutorial
+ * Copyright (C) Dan Gisselquist, Ph.D.
+ *               Gisselquist Technology, LLC
+ * Licensed under GPLv3 or later.
+ *
+ * Modifications:
+ * - minor modifications
+ */
+
+
 module wishbone_slave(clk_i,
 	adr_i,dat_i,cyc_i,stb_i,we_i,
 	dat_o,stall_o,ack_o,led_o);
